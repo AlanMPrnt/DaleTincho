@@ -5,7 +5,7 @@ const siteOrigin =
   process.env.NEXT_PUBLIC_SITE_ORIGIN ??
   (process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : 'https://nuestra-historia-13102016.alanmat08.chatgpt.site');
+    : 'https://dale-tincho.vercel.app');
 
 export const metadata: Metadata = {
   title: 'Nuestra historia · Amorcito',
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
     locale: 'es_AR',
     images: [
       {
-        url: '/og.png',
-        width: 2048,
-        height: 1152,
+        url: '/og.jpg',
+        width: 1200,
+        height: 675,
         alt: 'Nuestra historia · De Blue a nuestra familia',
       },
     ],
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Nuestra historia · Amorcito',
     description: 'De Blue a nuestra familia, y a todo lo que todavía nos queda por vivir.',
-    images: ['/og.png'],
+    images: ['/og.jpg'],
   },
 };
 
@@ -45,4 +45,3 @@ export default function RootLayout({
     </html>
   );
 }
-
